@@ -1,7 +1,6 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import Image from "next/image";
 import { useState } from "react";
 
 export default function Projects() {
@@ -139,14 +138,14 @@ export default function Projects() {
                 <p className="text-carafe mb-4">
                   {projects[currentProject].description}
                 </p>
-                <div className="flex justify-center space-x-2 mb-4">
+                <div className="flex flex-wrap justify-center border-blueGray gap-3 mb-4">
                   {projects[currentProject].tech.map((tech, idx) => (
-                    <span
+                    <div
                       key={idx}
-                      className="px-3 py-1 text-sm rounded-full bg-khaki text-white"
+                      className="px-3 py-1 text-sm h-8 rounded-full bg-khaki text-white"
                     >
                       {tech}
-                    </span>
+                    </div>
                   ))}
                 </div>
                 <a
