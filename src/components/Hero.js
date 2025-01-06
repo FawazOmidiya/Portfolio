@@ -1,16 +1,20 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import {
-  FaGithub,
-  FaLinkedin,
-  FaTwitter,
-  FaInstagram,
-  FaFileAlt,
-} from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram, FaFileAlt } from "react-icons/fa";
 
 export default function Hero() {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  useEffect(() => {
+    // Preload the background image
+    const img = new window.Image();
+    img.src = "/GradShot.png";
+    img.onload = () => setImageLoaded(true);
+  }, []);
+
   // Variants for Staggered Animations
   const container = {
     hidden: { opacity: 0 },
@@ -42,15 +46,18 @@ export default function Hero() {
 
   return (
     <section className="relative bg-carafe py-16 md:py-24">
-      {/* Background Image */}
+      {/* Background Image with Smooth Transition */}
       <div
-        className="absolute inset-0 bg-cover bg-center opacity-60"
+        className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ${
+          imageLoaded ? "opacity-60" : "opacity-0"
+        }`}
         style={{
-          backgroundImage: "url('/GradShot.png')", // Replace with your image path
+          backgroundImage: "url('/GradShot.png')",
         }}
         aria-hidden="true"
       ></div>
 
+      {/* Content */}
       <div className="relative container mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
         {/* Text Section */}
         <motion.div
