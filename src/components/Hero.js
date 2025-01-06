@@ -65,7 +65,7 @@ export default function Hero() {
             className="text-4xl md:text-5xl font-bold text-white mb-4"
             variants={fadeIn}
           >
-            Hello World! I’m{" "}
+            Hello World! I&apos;m{" "}
             <span className="text-blueAngel text-7xl">Fawaz Omidiya</span>
           </motion.h1>
 

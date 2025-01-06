@@ -20,9 +20,9 @@ export default function AboutMe() {
         </Link>
         <h2 className="text-5xl font-bold mb-8">About Me</h2>
         <p className="text-lg md:text-xl mb-10 max-w-3xl mx-auto">
-          I'm Fawaz Omidiya, a passionate software engineer with a love for
-          coding, basketball, music, and exploring the world. Here’s what keeps
-          me busy:
+          I&apos;m Fawaz Omidiya, a passionate software engineer with a love for
+          coding, basketball, music, and exploring the world. Here&apos;s what
+          keeps me busy:
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Hobby 1: Coding */}

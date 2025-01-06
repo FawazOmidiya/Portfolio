@@ -1,6 +1,7 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function Projects() {
@@ -127,7 +128,7 @@ export default function Projects() {
                   {projects[currentProject].name}
                 </h3>
                 {projects[currentProject].image ? (
-                  <img
+                  <Image
                     src={projects[currentProject].image}
                     alt={projects[currentProject].name}
                     className="w-full max-w-sm m-auto"
