@@ -17,7 +17,7 @@ export async function POST(req: Request) {
     }
 
     await resend.emails.send({
-      from: "Website <onboarding@resend.dev>", // Replace with verified sender email
+      from: "Website Contact <onboarding@resend.dev>", // Replace with verified sender email
       to: "fomidiya@gmail.com", // Replace with your email
       subject: `New Contact Message from ${name}`,
       html: `
