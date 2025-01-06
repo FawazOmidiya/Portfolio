@@ -8,7 +8,7 @@ export default function Projects() {
     {
       name: "Portfolio Website",
       description:
-        "This sleek, responsive portfolio showcasing my work and skills. Please let me know what you think i the contact section below!",
+        "This sleek, responsive portfolio showcasing my work and skills. Please let me know what you think in the contact section below!",
       link: "https://github.com/FawazOmidiya/Personal",
       tech: ["Next.js", "Tailwind CSS", "shadcn/ui", "Motion"],
     },
