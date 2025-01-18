@@ -103,7 +103,7 @@ export default function Hero() {
                 label: "Instagram",
               },
               {
-                href: "/Fawaz_s_Resume (4).pdf",
+                href: "/Fawaz_s_Resume (5).pdf",
                 icon: FaFileAlt,
                 label: "Resume",
               },
